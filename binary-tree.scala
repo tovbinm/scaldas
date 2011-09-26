@@ -3,7 +3,7 @@ import scala.collection.mutable.Queue
 import scala.collection.mutable.Stack
 
 case class Node[T <% Ordered[T]](var data: T, var left: Node[T], var right: Node[T]){
-   override def toString() : String = { data.toString }
+   override def toString = data.toString 
 }
 
 case class BinarySearchTree[T <% Ordered[T]](var root: Node[T]) {   
@@ -132,8 +132,7 @@ case class BinarySearchTree[T <% Ordered[T]](var root: Node[T]) {
   
 }
 
-
-
+//Some tests//
 println("Example tree:     ")
 println("        5         ")
 println("      /   \\      ")
